@@ -608,19 +608,19 @@ text-align: left;
     /* background-color: tomato; */
 }
 
-.images {
+.profession-images {
     margin: 0;
     padding: 0;
     display: flex;
 }
-.item-engaged {
+.images-item {
     position: relative;
 }
-.item-engaged__img {
+.images-item__img {
     display: block;
     
 }
-.item-engaged__label{
+.images-item__label{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -642,7 +642,7 @@ text-align: left;
     background-color: var(--item-engaged-image);
 }
 
-.images .item-engaged +.item-engaged {
+.profession-images .images-item +.images-item {
     margin-left: 30px;
 }
 
