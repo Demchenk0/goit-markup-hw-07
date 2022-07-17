@@ -319,7 +319,7 @@ ul {
 
 /* Modalka Form */
 
-.form-model {
+.modal-box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -330,7 +330,7 @@ ul {
     min-height: 581px;
 }
 
-.form-title {
+.modal-box__title {
     margin: 0;
     margin-bottom: 12px;
     font-size: 20px;
@@ -341,12 +341,27 @@ ul {
     color: var(--secont-text-color);
 }
 .form {
-margin-left: auto;
-margin-right: auto;
-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
 
 }
-.input-field {
+
+.form__tag {
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+    text-align: left;
+}
+
+.form__input {
     padding: 11px 12px 11px 42px;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -356,7 +371,7 @@ width: 448px;
     transition: border 250ms var(--timing-function);
 }
 
-.input-textarea {
+.form__textarea {
     padding: 12px 16px;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -367,12 +382,12 @@ width: 448px;
 
     resize: none;
 }
-.input-field:focus,
-.input-textarea:focus {
+.form__input:focus,
+.form__textarea:focus {
     border: 1px solid var(--accent-color);
 }
 
-.input-field:focus + .input-icon {
+.form__input:focus + .form__icon {
     fill: var(--accent-color);
 }
 .input-wrapper {
@@ -380,7 +395,7 @@ width: 448px;
     display: flex;
 }
 
-.input-icon {
+.form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -390,13 +405,13 @@ width: 448px;
 }
  
 
-.label-hero{
+.form__label{
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
 }
 
-.label-textarea {
+.form__comment {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -406,19 +421,7 @@ margin-bottom: 10px;
 }
 
 
-.input-tag {
-    margin-bottom: 4px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-    
-letter-spacing: 0.01em;
-    
-color: #757575;
-text-align: left;
-}
+
 
 /* .checbox {
     margin-top: 20px;
@@ -490,7 +493,7 @@ text-align: left;
 /* Смена цвета */
 
 
-.form-button {
+.form__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -986,6 +989,8 @@ text-align: left;
     fill: var(--wabs-iconhover-color);
     margin-left: 10px;
 }
+
+
 
 
 
