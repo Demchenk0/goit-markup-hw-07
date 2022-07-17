@@ -67,7 +67,7 @@ ul {
     border-bottom: 1px solid;
 }
 
-.main-nav {
+.header__nav {
     display: flex;
     align-items: center;
 }
@@ -94,7 +94,7 @@ ul {
     padding-bottom: 0;
 }
 
-.logo {
+.header__logo {
     width: 145px;
     color: var(--logo-color);
     font-weight: 700;
@@ -103,7 +103,7 @@ ul {
     font-family: 'Raleway';
 }
 
-.accent {
+.header__accent {
     color: var(--accent-color);
 }
 
@@ -114,11 +114,11 @@ ul {
     align-items: center;
 }
 
-.site-nav .item+.item {
+.site-nav .site-nav__item+.site-nav__item {
     margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav .site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -153,11 +153,11 @@ ul {
     fill: currentColor;
 }
 
-.auth-nav .item+.item {
+.auth-nav .auth-nav__item+.auth-nav__item {
     margin-left: 30px;
 }
 
-.header-contact {
+.auth-nav__header-contact {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -170,20 +170,20 @@ ul {
 
 /* Наведения */
 
-.header-contact:hover,
-.header-contact:focus {
+.auth-nav__header-contact:hover,
+.auth-nav__header-contact:focus {
     color: var(--accent-color);
     opacity: 1;
 }
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
     color: var(--accent-color);
     
 }
 
-.link.current {
+.site-nav__link.current {
     
     color: var(--accent-color);
     
@@ -211,8 +211,8 @@ ul {
 
    
 }
-
-.hero {
+/* секция хиро */
+.hero__link {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
@@ -231,9 +231,7 @@ ul {
     background-size: cover;
 }
 
-/* .container .hero-title {
-    margin: auto;
-} */
+
 .hero-title {
     width: 696px;
     height: 120px;
@@ -563,6 +561,8 @@ text-align: left;
 }
 
 /* h3 Маленький жирный заголовок */
+/* featture ???????????????????????
+list?????????? */
 .feature {
     margin: 0;
     padding: 0;
@@ -570,15 +570,15 @@ text-align: left;
     flex-wrap: wrap;
 }
 
-.feature .item {
+.feature .feature__item {
     width: 270px;
 }
 
-.feature .item+.item {
+.feature .feature__item+.feature__item {
     margin-left: 30px;
 }
 
-.feature .feature-icon {
+.feature .feature__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +588,7 @@ text-align: left;
     background-color: var(--feature-icon-color)
 }
 
-.feature .title,
+.feature__title,
 .team .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -666,7 +666,7 @@ text-align: left;
     display: flex;
 }
 
-.feature .text {
+.feature__text {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
@@ -788,21 +788,21 @@ text-align: left;
     background-color: var(--secont-bg-color);
 }
 
-.footer-logo {
+.footer__logo {
     color: var(--white-color);
     text-decoration: none;
 }
 
-.footer-address .item+.item {
+.footer__address .item+.item {
     margin-top: 9px;
 }
 
-.footer-address {
+.footer__address {
     margin-top: 20px;
     line-height: 1.71;
 }
 
-.footer-link {
+.footer__link {
     color: var(--white-color);
     text-decoration: none;
     font-style: normal;
@@ -810,7 +810,7 @@ text-align: left;
     background-color 250ms var(--timing-function);
 }
 
-.footer-contacts {
+.footer__contacts {
     color: var(--third-text-color);
     text-decoration: none;
     font-style: normal;
@@ -819,10 +819,10 @@ text-align: left;
 
 
 
-.footer-contacts:hover,
-.footer-contacts:focus,
-.footer-link:hover,
-.footer-link:focus {
+.footer__contacts:hover,
+.footer__contacts:focus,
+.footer__link:hover,
+.footer__link:focus {
     color: var(--accent-color);
 }
 
@@ -833,6 +833,14 @@ text-align: left;
     background-color: var(--accent-color);
 }
 
+/* .footer__logo {
+    width: 145px;
+    color: var(--logo-color);
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Raleway';
+} */
 .footer-box {
     display: flex;
     align-items: baseline;
@@ -982,7 +990,7 @@ text-align: left;
     line-height: 1.6;
     letter-spacing: 0.03em;
     transition: color 250ms var(--timing-function);
-    background-color 252ms var(--timing-function);
+    /* background-color: 250ms var(--timing-function); */
 }
 
 .filter:hover,
@@ -990,7 +998,7 @@ text-align: left;
     color: var(--white-color);
     background-color: var(--accent-bg-color);
     transition: color 250ms var(--timing-function);
-    background-color 250ms var(--timing-function);
+    /* background-color: 250ms var(--timing-function); */
 }
 
 /* Project */
