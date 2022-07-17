@@ -88,10 +88,11 @@
 .team-web__icon {
     fill: currentColor;
 }
-
-.team-web__link:hover,
-.team-web__link:focus {
+.team-web {
+    &__link:hover,
+    &__link:focus {
     color: var(--wabs-iconhover-color);
     background-color: var(--accent-color);
-
+    
+        }
 }

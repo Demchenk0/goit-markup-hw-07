@@ -4,6 +4,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    &__button:hover,
+        &__button:focus {
+            color: var(--white-color);
+            background-color: var(--accent-bg-color);
+            transition: color 250ms var(--timing-function),
+                background-color 250ms var(--timing-function);
+        }
 }
 
 .filters__item+.filters__item {
@@ -23,10 +30,3 @@
         background-color 250ms var(--timing-function);
 }
 
-.filters__button:hover,
-.filters__button:focus {
-    color: var(--white-color);
-    background-color: var(--accent-bg-color);
-    transition: color 250ms var(--timing-function),
-        background-color 250ms var(--timing-function);
-}
