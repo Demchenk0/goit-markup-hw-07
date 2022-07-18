@@ -1,3 +1,6 @@
+
+
+
 .header {
     border-bottom: 1px solid;
 }
@@ -8,14 +11,6 @@
 }
 
 
-
-/* 
-.section.no-padding {
-    background-color: teal;
-    padding-top: 0;
-    padding-bottom: 0;
-} */
-
 .logo-link {
     width: 145px;
     color: var(--logo-color);
@@ -23,6 +18,12 @@
     font-size: 26px;
     text-decoration: none;
     font-family: 'Raleway';
+@media screen and (max-width: 767px){
+height: 60px;
+    align-items: center;
+    display: flex;
+}
+    
 }
 
 .logo-accent {
@@ -38,6 +39,11 @@
     &__link:focus {
     color: var(--accent-color);
     }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 .site-nav__item+.site-nav__item {
@@ -62,6 +68,13 @@
 .auth-nav {
     display: flex;
     margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-direction: column;
+        
+    }
 }
 
 .nav-smartphone {
@@ -80,6 +93,8 @@
 
 .auth-nav__item+.auth-nav__item {
     margin-left: 30px;
+
+    
 }
 
 .auth-nav__header-contact {
@@ -96,7 +111,10 @@
                 color: var(--accent-color);
                 opacity: 1;
         }
-    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 1px 0;
+        }
+        
 }
 
 /* Наведения */
